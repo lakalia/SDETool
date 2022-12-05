@@ -1,0 +1,122 @@
+section.left {
+  width: 17.4%;
+  align-content: flex-start;
+}
+section.left p {
+  font-size: 1.25vw;
+  padding: 0 2vw;	/* top,bottom 0 right,left 2vw */
+}
+section.left li {
+  font-size: .8vw;
+  font-weight: bold;
+  list-style-position: inside;
+  margin: 0 1.5vw 0 0;	/* top 0 right 1.5 bottom 0 left 0 */
+  padding: 0;
+}
+section.center {
+  display: flex;
+  align-items: stretch;
+  width: 65.2%;
+}
+iframe.mainframe {
+  width: 100%;
+  min-height: 33vw;
+}
+section.right {
+  width: 17.4%;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltiptext { /* space combinator = tooltiptext IN tooltip!!! */
+  visibility: hidden;
+  color: white;
+  font-size: 1vw;
+  background-color: dimgray;
+  width: 65vw;
+  height: 7vw;
+  padding: 2vw;
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%; /* move bottom of text and box 100% pos i.e. up */
+  right: 50%; /* move right side of text and box 50% pos i.e. left */
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+form {
+  width: 100%;
+  font-size: 1vw;
+  padding: 0.75vw;
+  flex-direction: column;
+  justify-content: space-between;
+}
+input[type=text], textarea {
+  width: 90%;
+  margin: 0.1;
+  border: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+input[type=submit] {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1vw;
+  background-color: #880016;
+  border: none;	/* redundancy for backward compatibility?? */
+  text-align: center;
+  width: 91%;
+  margin: 0.25vw 0.1vw;	/* top,bottom 0.25vw right,left 0.1vw */
+  border: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+@media only screen and (orientation:portrait), 		/*	comma for OR  */
+			screen and (max-width: 800px) {
+  main {
+    flex-direction: column;
+  }
+  section.left {
+    width: 100%;
+  }
+  section.left p {
+    font-size: 2.25vw;
+    font-weight: bold;
+  }
+  section.left li {
+    font-size: 2vw;
+    font-weight: bold;
+    margin: 0 1vw;	/* top,bottom 0 right,left 1vw */
+    padding: 0;
+  }
+  section.center {
+    width: 100%;
+  }
+  section.right {
+    width: 100%;
+    flex-direction: column;
+  }
+  .tooltip .tooltiptext {
+    font-size: 2vw;
+    padding: 0.5vw;
+    width: 99%;
+    height: auto;
+    right: 0;	/* move right side of text and box 0 i.e. leave where it would normally flow */
+  }
+  form {
+    font-size: 2vw;
+    font-weight: bold;
+    padding: 2vw;
+  }
+  input[type=text], textarea {
+    margin: 2vw 0.25vw 2vw 1.5vw;	/* top 2vw right .25vw bottom 2vw left 1.5vw */
+  }
+  input[type=submit] {
+    font-size: 2vw;
+    margin: 2vw 0.5vw 2vw 1.5vw;	/* top 2vw right .5vw bottom 2vw left 1.5vw */
+  }

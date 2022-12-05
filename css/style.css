@@ -1,0 +1,96 @@
+html {
+  font: 1rem/1.5 'Poppins', sans-serif; /* set root font-size, line-spacing and font-face ??? not working ??? */
+}
+body {
+  margin: 0;
+  overflow: scroll;
+  font-family: 'Poppins', sans-serif;	/* should mean don't need to set for tabs links and heading */
+}
+header {
+  background-color: #880016;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.logo {
+  /* for responsive image */
+  width: 17.4%;
+  height: auto;
+}
+nav {
+  display: flex;
+  width: 82.6%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+h1 {
+  color: white;
+/*  font-family: 'Poppins', sans-serif; */
+  font-size: 3vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+nav span {
+  background-color: #880016;
+  border-style: solid solid none solid;
+  border-width: .1vw;
+  height: 2vw;
+  width: 15vw;
+  margin: 0 .2vw; /* top,bottom 0 right,left .2vw */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav span {
+  border-color: grey;
+}
+nav span.tab-white {
+  border-color: white;
+}
+nav span a {
+/*  font-family: 'Poppins', sans-serif;	*/
+  font-weight: bold;
+  font-size: .7vw;
+  text-decoration: none;
+  color: silver;
+}
+nav span a:hover {
+  color: white;
+}
+nav span.tab-white a {
+  color: white;
+}
+main {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
+.left, .right {
+  color: white;
+  background-color: dimgray;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media only screen and (orientation:portrait), 		/*	comma for OR  */
+			screen and (max-width: 800px) {
+  nav {
+    flex-direction: column;
+  }
+  .logo {
+    width: 40%;
+  }
+  h1 {
+    display: none;
+  }
+  nav span {
+    width: 100%;
+    height: 5vw;
+    border-style: solid;
+  }
+  nav span a {
+    font-size: 1.5vw;
+  }
+}
