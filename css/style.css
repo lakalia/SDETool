@@ -4,7 +4,7 @@ html {
 body {
   margin: 0;
   overflow: scroll;
-  font-family: 'Poppins', sans-serif;	/* should mean don't need to set for tabs links and heading */
+  font-family: 'Poppins', sans-serif; /* should mean don't need to set for tabs links and heading */
 }
 header {
   background-color: #880016;
@@ -26,7 +26,7 @@ nav {
 }
 h1 {
   color: white;
-/*  font-family: 'Poppins', sans-serif; */
+  /*  font-family: 'Poppins', sans-serif; */
   font-size: 3vw;
   width: 100%;
   display: flex;
@@ -42,6 +42,7 @@ nav span {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: nowrap;
 }
 nav span {
   border-color: grey;
@@ -50,7 +51,7 @@ nav span.tab-white {
   border-color: white;
 }
 nav span a {
-/*  font-family: 'Poppins', sans-serif;	*/
+  /*  font-family: 'Poppins', sans-serif;	*/
   font-weight: bold;
   font-size: .7vw;
   text-decoration: none;
@@ -74,8 +75,8 @@ main {
   display: flex;
   flex-wrap: wrap;
 }
-@media only screen and (orientation:portrait), 		/*	comma for OR  */
-			screen and (max-width: 800px) {
+@media only screen and (orientation:portrait), /*	comma for OR  */ 
+			screen and (max-width: 600px) {
   nav {
     flex-direction: column;
   }

@@ -46,7 +46,7 @@ section.right p {
   margin: 0 4vw; /* top,bottom 0 right,left 4vw */
 }
 @media only screen and (orientation:portrait), 		/*	comma for OR  */
-			screen and (max-width: 800px) {
+			screen and (max-width: 600px) {
   main {
     flex-direction: column-reverse;
   }

@@ -77,7 +77,7 @@ input[type=submit] {
   -webkit-border-radius: 0px;
 }
 @media only screen and (orientation:portrait), 		/*	comma for OR  */
-			screen and (max-width: 800px) {
+			screen and (max-width: 600px) {
   main {
     flex-direction: column;
   }
