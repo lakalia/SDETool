@@ -1,19 +1,19 @@
-section.left {
+div.left {
   width: 17.4%;
   align-content: flex-start;
 }
-section.left p {
+div.left p {
   font-size: 1.25vw;
   padding: 0 2vw;	/* top,bottom 0 right,left 2vw */
 }
-section.left li {
+div.left li {
   font-size: .8vw;
   font-weight: bold;
   list-style-position: inside;
   margin: 0 1.5vw 0 0;	/* top 0 right 1.5 bottom 0 left 0 */
   padding: 0;
 }
-section.center {
+div.center {
   display: flex;
   align-items: stretch;
   width: 65.2%;
@@ -22,7 +22,7 @@ iframe.mainframe {
   width: 100%;
   min-height: 33vw;
 }
-section.right {
+div.right {
   width: 17.4%;
 }
 .tooltip {
@@ -81,23 +81,23 @@ input[type=submit] {
   main {
     flex-direction: column;
   }
-  section.left {
+  div.left {
     width: 100%;
   }
-  section.left p {
+  div.left p {
     font-size: 2.25vw;
     font-weight: bold;
   }
-  section.left li {
+  div.left li {
     font-size: 2vw;
     font-weight: bold;
     margin: 0 1vw;	/* top,bottom 0 right,left 1vw */
     padding: 0;
   }
-  section.center {
+  div.center {
     width: 100%;
   }
-  section.right {
+  div.right {
     width: 100%;
     flex-direction: column;
   }

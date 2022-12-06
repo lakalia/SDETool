@@ -1,47 +1,47 @@
-section.left {
+div.left {
   width: 17.4%;
   align-content: center;
 }
-section.left li {
+div.left li {
   list-style-position: inside;
   font-size: 1vw;
 }
-section.left img {
+div.left img {
   /* for responsive image */
   width: 50%;
   height: auto;
   padding: 2vw;
 }
-section.left a {
+div.left a {
   font-size: 1.25vw;
   color: white;
 }
-section.left a span {
+div.left a span {
   display: inline-block;
 }
-section.center {
+div.center {
   display: flex;
   align-items: flex-start;
   width: 42%;
 }
-section.center img {
+div.center img {
   width: 100%;
   height: auto;
 }
-section.right {
+div.right {
   width: 40.6%;
   display: flex;
   align-content: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-section.right img {
+div.right img {
   /* for responsive image */
   width: 50%;
   height: auto;
   padding: 2vw;
 }
-section.right p {
+div.right p {
   font-size: 1vw;
   margin: 0 4vw; /* top,bottom 0 right,left 4vw */
 }
@@ -50,23 +50,23 @@ section.right p {
   main {
     flex-direction: column-reverse;
   }
-  section.left {
+  div.left {
     width: 100%;
     flex-direction: column;
   }
-  section.left li {
+  div.left li {
     font-size: 2vw;
   }
-  section.left a {
+  div.left a {
     font-size: 2.25vw;
   }
-  section.center {
+  div.center {
     width: 100%;
   }
-  section.right {
+  div.right {
     width: 100%;
   }
-  section.right p {
+  div.right p {
     margin: 2vw;
     font-size: 2vw;
   }
